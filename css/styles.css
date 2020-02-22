@@ -1,0 +1,143 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#scroll-animate
+{
+  overflow: hidden;
+}
+
+#scroll-animate-main
+{
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+#heightPage,
+#heightScroll
+{
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage
+{
+  left: 0;
+}
+
+#heightScroll
+{
+  right: 0;
+}
+
+
+body{
+	background-color: #C1E3E8;
+}
+
+
+h1{
+  color: white;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 90px;
+  text-align: center;
+}
+.title-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  border: 15px solid #C1E3E8;
+  padding: 50px;
+  margin: 20px;
+
+}
+
+.border{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border: 15px solid #FF0004;
+  padding: 50px;
+}
+
+.grid-4{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+
+}
+	
+
+.looking-out{
+	width: 25%;
+	height: 25%;
+	padding: 50%;
+	padding-bottom: 0px;
+	background-image: url('../images/looking-out.jpg');
+	background-repeat: no-repeat;
+
+}
+.dirt-road{
+	width: 25%;
+	height: 25%;
+	padding: 50%;
+	padding-bottom: 0px;
+	background-image: url('../images/dirt-road.png');
+	background-repeat: no-repeat;
+
+}
+.city-look{
+	width: 25%;
+	height: 15vh;
+	padding: 50%;
+	padding-bottom: 0px;
+	background-image: url('../images/city-look.jpg');
+	background-repeat: no-repeat;
+
+}
+.sitting-on-bench{
+	width: 25%;
+	height: 25%;
+	padding: 50%;
+	background-image: url('../images/sitting-on-bench.jpg');
+	background-repeat: no-repeat;
+
+}
+
+.city-life{
+	background-image: url('../images/sanfran.png');
+	margin: 0px;
+	padding: 100%;
+	padding-top: 0px;
+	max-width: 100%;
+  	height: auto;
+	
+}
+
+#scroll-animate-main
+{
+  -webkit-transition-property: all;
+     -moz-transition-property: all;
+      transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
